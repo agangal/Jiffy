@@ -8,6 +8,22 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBlock Text="Jiffy" VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   Style="{ThemeResource TitleTextBlockStyle}"
+                   Grid.Row="0">
+            </TextBlock>
+            <Pivot Grid.Row="1">
+                <PivotItem Header="Home"></PivotItem>
+                <PivotItem Header="Recent"></PivotItem>
+                <PivotItem Header="Reactions"></PivotItem>
+                <PivotItem Header="Explore"></PivotItem>
+            </Pivot>
+        </Grid>
     </Grid>
 </Page>
